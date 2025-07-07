@@ -255,3 +255,6 @@
     display: block;
   }
 }
+.came-box-tabs a:visited {
+  text-decoration: underline;
+}
