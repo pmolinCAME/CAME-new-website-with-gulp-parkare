@@ -1,0 +1,16 @@
+.has-medium-font-size{
+    @include respond-to('desktop') {
+        font-size: 1.9rem !important;
+    }
+    @include respond-to('large-desktop') {
+        font-size: 2.5rem !important;
+    }
+}
+.has-small-font-size{
+    @include respond-to('desktop') {
+        font-size: 1.6rem !important;
+    }
+    @include respond-to('large-desktop') {
+        font-size: 1.8rem !important;
+    }
+}

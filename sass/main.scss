@@ -1,0 +1,168 @@
+@import "_breackpoints.scss";
+@import "_elements.scss";
+@import "_BU-menu-images.scss";
+@import "_fonts.scss";
+@import "_products.scss";
+@import "_sliders.scss";
+
+
+.ombra_blocchi{
+  box-shadow: -7px 11px 14px rgba(153, 153, 153, 0.19),
+    0 6px 6px rgba(179, 178, 178, 0.23);
+}
+
+
+// testo immagine gallery pagina quality
+.testo_immagine_quality{
+  border: 1px solid #00324721;
+
+  .wp-element-caption{
+    margin: 0!important;
+    font-weight: bold!important;
+    text-transform: uppercase!important;
+    padding: 1rem!important;
+    font-size: 1.4rem!important;
+    width: auto!important;
+    
+    background: unset!important;
+    box-sizing: unset!important;
+    color: #003247!important;
+    font-size: unset!important;
+    bottom: unset!important;
+    left: unset!important;
+    margin-bottom: unset!important;
+    max-height: unset!important;
+    overflow: unset!important;
+    position: unset!important;
+  }
+}
+
+// tile pagina about
+.section_about_social{
+  .wp-block-image{
+    margin-bottom: 2rem;
+  }
+}
+
+//overlay banner HP
+.came-box-banners-slider .box-banner.overlay-dark-blu .banner-bg-image::before {
+  content: "";
+  display: block;
+  background-color: rgb(#003247, 0.5)!important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+//sottotitolo banner HP
+
+.came-box-banners-slider .box-banner.came-banner-default{
+  .box-banner-content{
+    h2 {
+      span {
+        font-size: 5.5rem;
+        margin-top: 2rem;
+        display: block;
+      }
+    }
+  }
+}
+
+.came-box-banners-slider .box-banner .banner-main-title h2{
+  line-height: 5rem;
+}
+
+//nascondi qr/div bottoni per pagina APP da mobile/desktop
+.div_bottoni {
+  display: none!important;
+}
+
+@media (max-width: 768px) {
+  .div_qr {
+    display: none!important;
+  }
+  .div_bottoni {
+    display: block!important;
+  }
+}
+
+
+// altezza titoli tile fissa (altrimenti le tile sono una piu alta dell'altra)
+
+.came-box-custom-card-slider .cards-container h2{
+  min-height: 100px!important;
+}
+
+//footer
+.logo_footer{
+  width: 100px!important;
+}
+
+.wp-block-column.footer-menu-col-style:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+//sezione bandierine change country
+.div-bandierine {
+
+  .wp-block-column.is-vertically-aligned-center.is-layout-flow.wp-block-column-is-layout-flow:first-child {
+    max-width: 50px;
+
+    figure {
+      display: flex;
+
+      img{
+        width: 28px;
+      }
+    }
+  }
+}
+
+
+
+//grafica pagina PRESS
+.page-header-press-release{
+  margin: 50px 0!important;
+  padding: 0!important;
+  max-width: var(--responsive--alignwide-width)!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  text-align: left!important;
+}
+
+.page-header-press-release h1{
+  font-size: var(--wp--preset--font-size--x-large) !important;
+}
+
+//CURSORE MENU MOBILE
+.container-box-hamburger-menu.open ul.menu>li>a {
+  cursor: pointer!important;
+}
+
+// DOTS IN HOMEPAGE
+.came-box-banners-slider .flickity-page-dots .dot.is-selected{
+  border: 1px solid rgb(255 255 255 / 50%)!important;
+}
+
+// Hide and show whatsapp button - Social page
+
+.button-whatsapp-channel-desktop {
+  display: block;
+}
+
+.button-whatsapp-channel-mobile {
+  display: none;
+}
+
+@media only screen and (max-width:768px) {
+  .button-whatsapp-channel-desktop {
+    display: none;
+  }
+
+  .button-whatsapp-channel-mobile {
+    display: block;
+  }
+}

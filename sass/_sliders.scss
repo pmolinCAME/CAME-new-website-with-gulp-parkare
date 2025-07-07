@@ -1,0 +1,20 @@
+
+.hide-desktop{
+    h2{
+        span{
+            font-size: 4.5rem !important;
+            line-height: 4.1rem !important;
+            min-height: 165px;
+        }
+    }
+}
+.hide-mobile{
+    .banner-main-title{
+        @include respond-to('desktop') {
+            max-width:60% !important;
+        }
+        @include respond-to('large-desktop') {
+            max-width:50% !important;
+        }
+    }
+}

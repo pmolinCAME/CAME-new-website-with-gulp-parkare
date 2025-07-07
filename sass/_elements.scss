@@ -1,0 +1,43 @@
+.hide_label{
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.hide-mobile{
+    display: none;
+    visibility: hidden;
+    @include respond-to('tablet') {
+        display: block !important;
+        visibility: visible !important;
+    }
+}
+.hide-desktop{
+    display: block;
+    visibility: visible;
+    margin-block-start: 0px !important;
+    @include respond-to('tablet') {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+.nomargin{
+    margin:0px !important;
+    padding: 0px !important;
+}
+
+//CASE HISTORY
+.came-box-content-carousel-1{
+    .wp-block-latest-posts__post-title{
+        font-size:2.9rem !important;
+        line-height: 2.9rem !important;
+        min-height: 170px;
+        @include respond-to('tablet') {
+            font-size:4.0rem !important;
+            line-height: 4.0rem !important;
+        }
+        @include respond-to('desktop') {
+            min-height: 200px;
+        }
+    }
+}
